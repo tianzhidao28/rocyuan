@@ -1,0 +1,4 @@
+/main/.settings
+/main/target
+/main/*.classpath
+/main/*.project
