@@ -36,14 +36,14 @@ import java.io.ObjectOutputStream;
  * @author rocyuan
  * @date:2014-9-17
  * @desc:
- * @project:  ĞòÁĞ»¯Àà(  )
+ * @project:  åºåˆ—åŒ–ç±»(  )
  */
 
 public class SerializeUtils {
 	
 
 	/**
-	 * ĞòÁĞ»¯´¦Àí
+	 * åºåˆ—åŒ–å¤„ç†
 	 * @param obj
 	 * @return
 	 */
@@ -54,7 +54,7 @@ public class SerializeUtils {
 		ObjectOutputStream oos = null;
 		ByteArrayOutputStream baos = null;
 		try {
-			// ĞòÁĞ»¯
+			// åºåˆ—åŒ–
 			baos = new ByteArrayOutputStream();
 			oos = new ObjectOutputStream(baos);
 			oos.writeObject(obj);
@@ -66,7 +66,7 @@ public class SerializeUtils {
 	}
 	
 	/**
-	 * ·´ĞòÁĞ»¯´¦Àí
+	 * ååºåˆ—åŒ–å¤„ç†
 	 * @param bytes
 	 * @return
 	 */
@@ -76,7 +76,7 @@ public class SerializeUtils {
 		}
 		ByteArrayInputStream bais = null;
 		try {
-			// ·´ĞòÁĞ»¯
+			// ååºåˆ—åŒ–
 			bais = new ByteArrayInputStream(bytes);
 			ObjectInputStream ois = new ObjectInputStream(bais);
 			return ois.readObject();
@@ -87,7 +87,7 @@ public class SerializeUtils {
 	
 	/**
 	 * 
-	 * @Description:  ĞòÁĞ»¯µ½ÎÄ¼ş
+	 * @Description:  åºåˆ—åŒ–åˆ°æ–‡ä»¶
 	 *  @param obj
 	 *  @param filePath    
 	 *  @return void   
