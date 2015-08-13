@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
  * 
  * @author yuanzp@jpush.cn
  * @date 2015-6-3
- * @desc ´òÓ¡¸÷ÖÖÈÕÖ¾ĞÅÏ¢ ¹©²Î¿¼
+ * @desc æ‰“å°å„ç§æ—¥å¿—ä¿¡æ¯ ä¾›å‚è€ƒ
  */
 public class LogInfoUtil {
 	private static final Logger logger = LoggerFactory
@@ -52,7 +52,7 @@ public class LogInfoUtil {
 		}
 
 		/**
-		 * ´òÓ¡³ö ÀàµÄ ËùÓĞÎŞ²ÎGet ·½·¨ĞÅÏ¢ 
+		 * æ‰“å°å‡º ç±»çš„ æ‰€æœ‰æ— å‚Get æ–¹æ³•ä¿¡æ¯ 
 		 * @param t
 		 */
 		private void printGet(T t) {
@@ -96,12 +96,12 @@ public class LogInfoUtil {
 			@Override
 			protected void print(HttpServletRequest request) {
 				if (logger.isDebugEnabled() || logger.isInfoEnabled()) {
-					String uri = request.getRequestURI();// ·µ»ØÇëÇóĞĞÖĞµÄ×ÊÔ´Ãû³Æ
-					String url = request.getRequestURL().toString();// »ñµÃ¿Í»§¶Ë·¢ËÍÇëÇóµÄÍêÕûurl
-					String ip = request.getRemoteAddr();// ·µ»Ø·¢³öÇëÇóµÄIPµØÖ·
-					String params = request.getQueryString();// ·µ»ØÇëÇóĞĞÖĞµÄ²ÎÊı²¿·Ö
-					String host = request.getRemoteHost();// ·µ»Ø·¢³öÇëÇóµÄ¿Í»§»úµÄÖ÷»úÃû
-					int port = request.getRemotePort();// ·µ»Ø·¢³öÇëÇóµÄ¿Í»§»úµÄ¶Ë¿ÚºÅ¡£
+					String uri = request.getRequestURI();// è¿”å›è¯·æ±‚è¡Œä¸­çš„èµ„æºåç§°
+					String url = request.getRequestURL().toString();// è·å¾—å®¢æˆ·ç«¯å‘é€è¯·æ±‚çš„å®Œæ•´url
+					String ip = request.getRemoteAddr();// è¿”å›å‘å‡ºè¯·æ±‚çš„IPåœ°å€
+					String params = request.getQueryString();// è¿”å›è¯·æ±‚è¡Œä¸­çš„å‚æ•°éƒ¨åˆ†
+					String host = request.getRemoteHost();// è¿”å›å‘å‡ºè¯·æ±‚çš„å®¢æˆ·æœºçš„ä¸»æœºå
+					int port = request.getRemotePort();// è¿”å›å‘å‡ºè¯·æ±‚çš„å®¢æˆ·æœºçš„ç«¯å£å·ã€‚
 					logger.info("\tURI :" + uri);
 					logger.info("\turl :" + url);
 					logger.info("\tip :" + ip);
