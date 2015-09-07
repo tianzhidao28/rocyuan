@@ -2,3 +2,5 @@
 /main/target
 /main/*.classpath
 /main/*.project
+/main/main.iml
+/main/.idea
