@@ -4,4 +4,9 @@
 /main/*.project
 /main/main.iml
 /main/.idea
-/http-aop/*
+.idea
+/http-aop/.settings
+/http-aop/target
+/http-aop/*.classpath
+/http-aop/*.project
+/http-aop/*.iml
